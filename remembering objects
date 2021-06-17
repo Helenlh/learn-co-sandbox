@@ -1,0 +1,28 @@
+class Song
+ 
+  attr_accessor :name
+ 
+  def initialize(name)
+    @name = name
+  end
+end
+
+hotline_bling = Song.new("Hotline Bling")
+thriller = Song.new("Thriller")
+Song.new  
+
+
+class Person
+attr_accessor
+@@people = []
+
+def initialize(name)
+   #this is an instance method
+   @name = name 
+   self.class.all<<self 
+end
+
+self in the initialize method is our new instance 
+
+self.class is Person
+self.class.all == Person.all 
